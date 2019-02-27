@@ -10,7 +10,7 @@ maior (a:b:x) | a>b = maior (a:x)
               
 menor [a] = a
 menor (a:b:x) | a<b = menor (a:x)
-            | otherwise = menor (b:x)
+              | otherwise = menor (b:x)
 
 pertence n [] = False            
 pertence n (a:x) | n == a = True
